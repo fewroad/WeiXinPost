@@ -22,9 +22,9 @@ city = "郑州"
 # 生日，如果月份或者日期小于10，直接用对应的数字即可，例如1997-1-1，---------倒计时
 birthday = "2004-7-28"
 # 在一起的日子，格式同上------------计时器
-love_date = "2001-12-1"
+love_date = "2023-1-31"
 # 天行数据晚安心语 key
-good_Night_Key = "4082bfd944c******************"
+good_Night_Key = "10efc222c4e82107b85e4a58c52bf92a"
 # -------------------------------------------------------------------------
 # 设置学期第一周开始日期
 year = 2022
@@ -114,8 +114,8 @@ classes = \
 # 天气： {{weather.DATA}}
 # 最低气温: {{min_temperature.DATA}}
 # 最高气温: {{max_temperature.DATA}}
-# 今天是破壳日的第: {{love_day.DATA}} 天
-# 距离开学还有: {{birthday.DATA}} 天
+# 今天是破壳日的第: {{birthday.DATA}} 天
+# 在一起的第: {{love_date.DATA}} 天
 # ----------------今日课程----------------
 # 第一讲: {{firstClass.DATA}}
 # 第二讲: {{secondClass.DATA}}
