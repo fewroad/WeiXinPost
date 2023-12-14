@@ -87,28 +87,28 @@ def get_Class(day):
 
 
  # 发送本周所有课程，周一的时候发
- def send_Week_Classes(to_user, access_token, week):
-     url = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={}".format(access_token)
-     theuser = to_user[0]
-     data = {
-         "touser": theuser,
-         "template_id": config.template_id2,
-         "url": "http://weixin.qq.com/download",
-         "topcolor": "#FF0000",
-         "data": {
-             "weeks": {
-                 "value": classInfo,
-                 "color": "#FF8000"
-                }
-         }
-     }
-     headers = {
-         'Content-Type': 'application/json',
-         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-                       'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
-     }
-     response = post(url, headers=headers, json=data)
-     print(response.text)
+# def send_Week_Classes(to_user, access_token, week):
+#     url = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={}".format(access_token)
+#     theuser = to_user[0]
+#     data = {
+#         "touser": theuser,
+#         "template_id": config.template_id2,
+#         "url": "http://weixin.qq.com/download",
+#         "topcolor": "#FF0000",
+#         "data": {
+#             "weeks": {
+#                 "value": classInfo,
+#                 "color": "#FF8000"
+#                }
+#         }
+#     }
+#     headers = {
+#         'Content-Type': 'application/json',
+#         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+#                       'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
+#     }
+#     response = post(url, headers=headers, json=data)
+#     print(response.text)
 
 
 # 发送每日信息
